@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  background-color: lawngreen;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.username_div,
+.email_div,
+.password_div,
+.thank_you_div {
+  background-color: white;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.thank_you_div {
+  width: 370px;
+}
+input {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+/* .fa-power-off:hover {
+  box-shadow: 2px 2px 2px black;
+  border-radius: 10px;
+} */
+.inactive {
+  display: none;
+}
+
+@keyframes shake {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 10deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes shake_effect {
+  0% {
+    rotate: 0deg;
+  }
+  10% {
+    rotate: -10deg;
+  }
+  20% {
+    rotate: 10deg;
+  }
+  30% {
+    rotate: -10deg;
+  }
+  40% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 0deg;
+  }
+  60% {
+    rotate: -10deg;
+  }
+  70% {
+    rotate: 10deg;
+  }
+  80% {
+    rotate: -10deg;
+  }
+
+  90% {
+    rotate: 10deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
