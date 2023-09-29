@@ -30,4 +30,8 @@ app.get("/speed_typing_factory.js", (request, response) => {
   response.statusCode = 200;
   response.sendFile(__dirname + "/Files/speed_typing/speed_typing_factory.js");
 });
+app.use("*", (request, response) => {
+  response.statusCode = 200;
+  response.sendFile(__dirname + "/home_page.html");
+});
 module.exports = app;
